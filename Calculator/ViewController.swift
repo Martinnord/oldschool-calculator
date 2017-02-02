@@ -7,18 +7,29 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
 
+    var btnSound = AVAudioPlayer
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        let path = Bundle.main.path(forResource: "btn", ofType: "wav") // Bundle: Stores the paths in our application. Now I'm getting the path for the sound effect
+        let soundURL = URL(fileURLWithPath: path!)
+        
+        do {
+            try btnSound = AVAudioPlayer(contentsOf: soundURL)
+            btnSound.prepareToPlay()
+        } catch let err as NSError{
+            print(err.debugDescription)
+        }
+        
+        
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
 
 }

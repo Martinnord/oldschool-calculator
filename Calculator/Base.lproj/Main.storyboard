@@ -254,6 +254,17 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HXM-Im-Dfy">
+                                <rect key="frame" x="104" y="583" width="167" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="16j-De-NkM"/>
+                                    <constraint firstAttribute="width" constant="167" id="Rsd-7Z-msb"/>
+                                </constraints>
+                                <state key="normal" image="clear"/>
+                                <connections>
+                                    <action selector="onClearPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9iV-t8-rIe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -263,6 +274,7 @@
                             <constraint firstItem="ub9-XO-lgo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="LNx-sq-gQr"/>
                             <constraint firstItem="HWF-T0-o1e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mdd-KW-tff"/>
                             <constraint firstAttribute="trailing" secondItem="ub9-XO-lgo" secondAttribute="trailing" id="OFc-Iu-59p"/>
+                            <constraint firstItem="HXM-Im-Dfy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ov7-ed-dWj"/>
                             <constraint firstItem="VL4-rt-XMd" firstAttribute="centerX" secondItem="aYB-Et-Mpg" secondAttribute="centerX" id="PCh-Oi-AkD"/>
                             <constraint firstItem="aYB-Et-Mpg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Q4C-hk-ZJN"/>
                             <constraint firstAttribute="trailing" secondItem="sMr-Qn-xxX" secondAttribute="trailing" id="UHw-lp-wS1"/>
@@ -271,6 +283,7 @@
                             <constraint firstItem="aYB-Et-Mpg" firstAttribute="top" secondItem="HWF-T0-o1e" secondAttribute="bottom" constant="5" id="e9W-Lr-Pr7"/>
                             <constraint firstItem="VL4-rt-XMd" firstAttribute="centerY" secondItem="aYB-Et-Mpg" secondAttribute="centerY" id="hRE-Sn-xnI"/>
                             <constraint firstItem="sMr-Qn-xxX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hzE-tg-cOw"/>
+                            <constraint firstItem="HXM-Im-Dfy" firstAttribute="top" secondItem="aYB-Et-Mpg" secondAttribute="bottom" constant="25" id="jVJ-Uv-9HB"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sMr-Qn-xxX" secondAttribute="bottom" id="nUf-94-AJT"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ub9-XO-lgo" secondAttribute="bottom" id="yfv-b1-yBg"/>
                         </constraints>
@@ -281,7 +294,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138.75" y="136.25"/>
+            <point key="canvasLocation" x="138.40000000000001" y="135.38230884557723"/>
         </scene>
     </scenes>
     <resources>
@@ -297,6 +310,7 @@
         <image name="9" width="111" height="114"/>
         <image name="add" width="111" height="114"/>
         <image name="backpanel" width="620" height="938"/>
+        <image name="clear" width="333" height="114"/>
         <image name="counter" width="516" height="133"/>
         <image name="divide" width="111" height="114"/>
         <image name="equal" width="111" height="114"/>
